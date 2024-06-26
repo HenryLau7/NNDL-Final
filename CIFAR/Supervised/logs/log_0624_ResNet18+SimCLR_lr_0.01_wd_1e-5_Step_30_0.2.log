@@ -1,0 +1,40 @@
+nohup: ignoring input
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:63: UserWarning: Overwriting deit_tiny_patch16_224 in registry with deit.deit_tiny_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:78: UserWarning: Overwriting deit_small_patch16_224 in registry with deit.deit_small_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:93: UserWarning: Overwriting deit_base_patch16_224 in registry with deit.deit_base_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:108: UserWarning: Overwriting deit_tiny_distilled_patch16_224 in registry with deit.deit_tiny_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:123: UserWarning: Overwriting deit_small_distilled_patch16_224 in registry with deit.deit_small_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:138: UserWarning: Overwriting deit_base_distilled_patch16_224 in registry with deit.deit_base_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:153: UserWarning: Overwriting deit_base_patch16_384 in registry with deit.deit_base_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_384(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:168: UserWarning: Overwriting deit_base_distilled_patch16_384 in registry with deit.deit_base_distilled_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_384(pretrained=False, **kwargs):
+/root/miniconda3/envs/py310/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+{
+    "datapath": "../data/",
+    "logpath": "./logs/",
+    "batch_size": 512,
+    "epoch": 200,
+    "seed": 43,
+    "date": "0625",
+    "plot": true,
+    "num_classes": 100,
+    "opt": "AdamW",
+    "learning_rate": 0.01,
+    "weight_decay": 1e-05,
+    "pretrained": true,
+    "device_id": 1,
+    "dropout": true,
+    "cutout": true,
+    "cutmix": false,
+    "model": "ResNet18+SimCLR",
+    "comment": "StepLR_30_0.2"
+}
+2024-06-25 16:27:39

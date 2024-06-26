@@ -1,0 +1,1 @@
+python run_nerf.py --config configs/lion.txt > log_lion.log 2>&1 &

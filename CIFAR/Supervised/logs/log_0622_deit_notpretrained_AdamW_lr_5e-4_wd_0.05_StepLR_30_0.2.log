@@ -1,0 +1,176 @@
+nohup: ignoring input
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:63: UserWarning: Overwriting deit_tiny_patch16_224 in registry with deit.deit_tiny_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:78: UserWarning: Overwriting deit_small_patch16_224 in registry with deit.deit_small_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:93: UserWarning: Overwriting deit_base_patch16_224 in registry with deit.deit_base_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:108: UserWarning: Overwriting deit_tiny_distilled_patch16_224 in registry with deit.deit_tiny_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:123: UserWarning: Overwriting deit_small_distilled_patch16_224 in registry with deit.deit_small_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:138: UserWarning: Overwriting deit_base_distilled_patch16_224 in registry with deit.deit_base_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:153: UserWarning: Overwriting deit_base_patch16_384 in registry with deit.deit_base_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_384(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:168: UserWarning: Overwriting deit_base_distilled_patch16_384 in registry with deit.deit_base_distilled_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_384(pretrained=False, **kwargs):
+{
+    "datapath": "../data/",
+    "logpath": "./logs/",
+    "batch_size": 512,
+    "epoch": 100,
+    "seed": 43,
+    "date": "0622",
+    "plot": true,
+    "num_classes": 100,
+    "opt": "AdamW",
+    "learning_rate": 0.0005,
+    "weight_decay": 0.05,
+    "pretrained": false,
+    "device_id": 1,
+    "dropout": false,
+    "cutout": false,
+    "cutmix": true,
+    "model": "deit",
+    "comment": "StepLR_30_0.2"
+}
+2024-06-22 22:18:51
+Epoch:0, Loss:4.440825374758973, Acc:3.482, LR:0.0005
+Epoch:1, Loss:4.285123216862581, Acc:5.274, LR:0.0005
+Epoch:2, Loss:4.211544501538179, Acc:6.496, LR:0.0005
+Epoch:3, Loss:4.133315984083682, Acc:7.788, LR:0.0005
+Epoch:4, Loss:4.110085314633895, Acc:8.44, LR:0.0005
+Validation: Loss:3.7047973394393923, Acc:12.77
+Best model updated!
+Epoch:5, Loss:4.044687689567099, Acc:9.51, LR:0.0005
+Epoch:6, Loss:4.041451940731126, Acc:9.19, LR:0.0005
+Epoch:7, Loss:3.9866313399100792, Acc:10.93, LR:0.0005
+Epoch:8, Loss:3.9482522546028602, Acc:11.078, LR:0.0005
+Epoch:9, Loss:3.887601326922981, Acc:11.646, LR:0.0005
+Validation: Loss:3.272914934158325, Acc:21.04
+Best model updated!
+Epoch:10, Loss:3.8416822224247213, Acc:13.3, LR:0.0005
+Epoch:11, Loss:3.807222174138439, Acc:13.618, LR:0.0005
+Epoch:12, Loss:3.713472548796206, Acc:15.136, LR:0.0005
+Epoch:13, Loss:3.6934191085854353, Acc:16.15, LR:0.0005
+Epoch:14, Loss:3.6919454044225266, Acc:16.348, LR:0.0005
+Validation: Loss:2.8202563524246216, Acc:30.86
+Best model updated!
+Epoch:15, Loss:3.668918607186298, Acc:15.638, LR:0.0005
+Epoch:16, Loss:3.551643872747616, Acc:18.942, LR:0.0005
+Epoch:17, Loss:3.558306932449341, Acc:19.16, LR:0.0005
+Epoch:18, Loss:3.49906194696621, Acc:20.204, LR:0.0005
+Epoch:19, Loss:3.460965020315988, Acc:20.126, LR:0.0005
+Validation: Loss:2.5890464305877687, Acc:36.4
+Best model updated!
+Epoch:20, Loss:3.4006963749321137, Acc:21.53, LR:0.0005
+Epoch:21, Loss:3.4070994464718565, Acc:22.102, LR:0.0005
+Epoch:22, Loss:3.4005691615902647, Acc:23.128, LR:0.0005
+Epoch:23, Loss:3.336161735106488, Acc:22.706, LR:0.0005
+Epoch:24, Loss:3.297791918929742, Acc:24.08, LR:0.0005
+Validation: Loss:2.3490270376205444, Acc:41.16
+Best model updated!
+Epoch:25, Loss:3.268521875751262, Acc:23.332, LR:0.0005
+Epoch:26, Loss:3.2026941216721827, Acc:26.396, LR:0.0005
+Epoch:27, Loss:3.167406349766011, Acc:27.586, LR:0.0005
+Epoch:28, Loss:3.1612793462617055, Acc:25.638, LR:0.0005
+Epoch:29, Loss:3.1350913838464387, Acc:26.812, LR:0.0001
+Validation: Loss:2.051126891374588, Acc:48.35
+Best model updated!
+Epoch:30, Loss:2.935963118562893, Acc:32.772, LR:0.0001
+Epoch:31, Loss:2.868315954597629, Acc:35.488, LR:0.0001
+Epoch:32, Loss:2.882121896257206, Acc:32.062, LR:0.0001
+Epoch:33, Loss:2.911169609244989, Acc:33.736, LR:0.0001
+Epoch:34, Loss:2.8624545384426505, Acc:34.31, LR:0.0001
+Validation: Loss:1.820450383424759, Acc:53.85
+Best model updated!
+Epoch:35, Loss:2.810418592423809, Acc:34.656, LR:0.0001
+Epoch:36, Loss:2.775094759707548, Acc:35.682, LR:0.0001
+Epoch:37, Loss:2.793490117909957, Acc:34.078, LR:0.0001
+Epoch:38, Loss:2.760202520964097, Acc:37.306, LR:0.0001
+Epoch:39, Loss:2.7888040980514215, Acc:35.176, LR:0.0001
+Validation: Loss:1.7783197939395905, Acc:54.68
+Best model updated!
+Epoch:40, Loss:2.7973617741039822, Acc:34.726, LR:0.0001
+Epoch:41, Loss:2.745245800942791, Acc:36.04, LR:0.0001
+Epoch:42, Loss:2.7104592031362107, Acc:38.204, LR:0.0001
+Epoch:43, Loss:2.5707593073650283, Acc:42.674, LR:0.0001
+Epoch:44, Loss:2.623595189075081, Acc:41.1, LR:0.0001
+Validation: Loss:1.6771572053432464, Acc:56.87
+Best model updated!
+Epoch:45, Loss:2.602305768703928, Acc:42.038, LR:0.0001
+Epoch:46, Loss:2.512392426023678, Acc:43.32, LR:0.0001
+Epoch:47, Loss:2.722323933426215, Acc:37.88, LR:0.0001
+Epoch:48, Loss:2.6095547627429574, Acc:40.676, LR:0.0001
+Epoch:49, Loss:2.6464984891365986, Acc:38.362, LR:0.0001
+Validation: Loss:1.6676851212978363, Acc:57.02
+Best model updated!
+Epoch:50, Loss:2.55921133440368, Acc:42.122, LR:0.0001
+Epoch:51, Loss:2.58723766949712, Acc:42.56, LR:0.0001
+Epoch:52, Loss:2.4638415988610713, Acc:43.076, LR:0.0001
+Epoch:53, Loss:2.547471980659329, Acc:42.166, LR:0.0001
+Epoch:54, Loss:2.6265082663419297, Acc:41.536, LR:0.0001
+Validation: Loss:1.604268914461136, Acc:59.1
+Best model updated!
+Epoch:55, Loss:2.5285308871950423, Acc:41.934, LR:0.0001
+Epoch:56, Loss:2.535753074349189, Acc:41.414, LR:0.0001
+Epoch:57, Loss:2.4679621287754605, Acc:45.03, LR:0.0001
+Epoch:58, Loss:2.5694505547990603, Acc:43.8, LR:0.0001
+Epoch:59, Loss:2.527193878378187, Acc:43.534, LR:2e-05
+Validation: Loss:1.5681748032569884, Acc:59.94
+Best model updated!
+Epoch:60, Loss:2.3203264438376134, Acc:48.25, LR:2e-05
+Epoch:61, Loss:2.405790089344492, Acc:46.454, LR:2e-05
+Epoch:62, Loss:2.4846203935389615, Acc:45.656, LR:2e-05
+Epoch:63, Loss:2.421803722576219, Acc:47.024, LR:2e-05
+Epoch:64, Loss:2.3618008275421296, Acc:46.58, LR:2e-05
+Validation: Loss:1.536565625667572, Acc:60.47
+Best model updated!
+Epoch:65, Loss:2.4384839151586806, Acc:45.286, LR:2e-05
+Epoch:66, Loss:2.3846564080033983, Acc:46.11, LR:2e-05
+Epoch:67, Loss:2.3736016513133538, Acc:47.728, LR:2e-05
+Epoch:68, Loss:2.4176030402280846, Acc:42.62, LR:2e-05
+Epoch:69, Loss:2.3519961104101066, Acc:49.35, LR:2e-05
+Validation: Loss:1.5311166107654572, Acc:61.03
+Best model updated!
+Epoch:70, Loss:2.279997641942939, Acc:48.65, LR:2e-05
+Epoch:71, Loss:2.344816646405629, Acc:47.438, LR:2e-05
+Epoch:72, Loss:2.367309814204975, Acc:48.07, LR:2e-05
+Epoch:73, Loss:2.2626706106322154, Acc:50.326, LR:2e-05
+Epoch:74, Loss:2.307027531521661, Acc:48.638, LR:2e-05
+Validation: Loss:1.5141084790229797, Acc:60.99
+Epoch:75, Loss:2.3278172630436567, Acc:49.668, LR:2e-05
+Epoch:76, Loss:2.4273077255609086, Acc:46.506, LR:2e-05
+Epoch:77, Loss:2.283146144176016, Acc:51.56, LR:2e-05
+Epoch:78, Loss:2.4240017283935935, Acc:44.53, LR:2e-05
+Epoch:79, Loss:2.3694822769992205, Acc:48.274, LR:2e-05
+Validation: Loss:1.5093852400779724, Acc:61.16
+Best model updated!
+Epoch:80, Loss:2.094815682391731, Acc:55.876, LR:2e-05
+Epoch:81, Loss:2.3936881824415557, Acc:46.41, LR:2e-05
+Epoch:82, Loss:2.351919616971697, Acc:49.952, LR:2e-05
+Epoch:83, Loss:2.364105990954808, Acc:47.02, LR:2e-05
+Epoch:84, Loss:2.3169237363095188, Acc:50.174, LR:2e-05
+Validation: Loss:1.5101953208446504, Acc:61.32
+Best model updated!
+Epoch:85, Loss:2.2269528052028345, Acc:50.79, LR:2e-05
+Epoch:86, Loss:2.2978317579444574, Acc:45.888, LR:2e-05
+Epoch:87, Loss:2.3535619968054244, Acc:44.316, LR:2e-05
+Epoch:88, Loss:2.340259772174212, Acc:49.586, LR:2e-05
+Epoch:89, Loss:2.3722522617602837, Acc:49.7, LR:4.000000000000001e-06
+Validation: Loss:1.5038512647151947, Acc:61.31
+Epoch:90, Loss:2.3164356405637703, Acc:49.49, LR:4.000000000000001e-06
+Epoch:91, Loss:2.282272060306705, Acc:49.422, LR:4.000000000000001e-06
+Epoch:92, Loss:2.3471974718327426, Acc:49.89, LR:4.000000000000001e-06
+Epoch:93, Loss:2.3157281419452356, Acc:45.686, LR:4.000000000000001e-06
+Epoch:94, Loss:2.3145840040275028, Acc:51.144, LR:4.000000000000001e-06
+Validation: Loss:1.5045307576656342, Acc:61.27
+Epoch:95, Loss:2.3519436467667014, Acc:49.04, LR:4.000000000000001e-06
+Epoch:96, Loss:2.1975240427620557, Acc:52.616, LR:4.000000000000001e-06
+Epoch:97, Loss:2.1833079609335684, Acc:54.556, LR:4.000000000000001e-06
+Epoch:98, Loss:2.3068898879751867, Acc:49.358, LR:4.000000000000001e-06
+Epoch:99, Loss:2.2736592846257344, Acc:51.24, LR:4.000000000000001e-06
+Validation: Loss:1.5025870621204376, Acc:61.41
+Best model updated!
+Test: Acc:61.41

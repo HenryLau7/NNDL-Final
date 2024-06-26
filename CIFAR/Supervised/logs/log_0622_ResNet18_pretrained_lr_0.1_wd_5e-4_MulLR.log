@@ -1,0 +1,178 @@
+nohup: ignoring input
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:63: UserWarning: Overwriting deit_tiny_patch16_224 in registry with deit.deit_tiny_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:78: UserWarning: Overwriting deit_small_patch16_224 in registry with deit.deit_small_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:93: UserWarning: Overwriting deit_base_patch16_224 in registry with deit.deit_base_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:108: UserWarning: Overwriting deit_tiny_distilled_patch16_224 in registry with deit.deit_tiny_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_tiny_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:123: UserWarning: Overwriting deit_small_distilled_patch16_224 in registry with deit.deit_small_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_small_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:138: UserWarning: Overwriting deit_base_distilled_patch16_224 in registry with deit.deit_base_distilled_patch16_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_224(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:153: UserWarning: Overwriting deit_base_patch16_384 in registry with deit.deit_base_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_patch16_384(pretrained=False, **kwargs):
+/root/liuyuanye/NNDL/Final/CIFAR/deit.py:168: UserWarning: Overwriting deit_base_distilled_patch16_384 in registry with deit.deit_base_distilled_patch16_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def deit_base_distilled_patch16_384(pretrained=False, **kwargs):
+/root/miniconda3/envs/py310/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+deit_small的参数量: 22.05M
+{
+    "datapath": "../data/",
+    "logpath": "./logs/",
+    "batch_size": 128,
+    "epoch": 100,
+    "seed": 43,
+    "date": "0622",
+    "plot": true,
+    "num_classes": 100,
+    "opt": "SGD",
+    "learning_rate": 0.1,
+    "weight_decay": 0.0005,
+    "pretrained": true,
+    "device_id": 0,
+    "dropout": false,
+    "cutout": true,
+    "cutmix": false,
+    "model": "ResNet18",
+    "comment": "MulLR"
+}
+2024-06-22 15:46:27
+Epoch:0, Loss:4.471267544704935, Acc:3.704, LR:0.1
+Epoch:1, Loss:4.017655438474377, Acc:7.044, LR:0.1
+Epoch:2, Loss:3.8541356712351065, Acc:9.28, LR:0.1
+Epoch:3, Loss:3.7312318284798156, Acc:11.462, LR:0.1
+Epoch:4, Loss:3.610541455276177, Acc:13.672, LR:0.1
+Validation: Loss:3.3922765586949604, Acc:16.84
+Best model updated!
+Epoch:5, Loss:3.489501205551655, Acc:15.678, LR:0.1
+Epoch:6, Loss:3.3893110111851215, Acc:17.352, LR:0.1
+Epoch:7, Loss:3.2996369847251326, Acc:19.164, LR:0.1
+Epoch:8, Loss:3.2153984110068787, Acc:20.742, LR:0.1
+Epoch:9, Loss:3.1701440183098053, Acc:21.752, LR:0.1
+Validation: Loss:2.8097577819341346, Acc:28.57
+Best model updated!
+Epoch:10, Loss:3.1178409559342564, Acc:22.88, LR:0.1
+Epoch:11, Loss:3.06915974677981, Acc:23.61, LR:0.1
+Epoch:12, Loss:3.0369101930457307, Acc:24.306, LR:0.1
+Epoch:13, Loss:3.0082683398595553, Acc:24.804, LR:0.1
+Epoch:14, Loss:2.967202031703861, Acc:25.618, LR:0.1
+Validation: Loss:2.807847738265991, Acc:30.44
+Best model updated!
+Epoch:15, Loss:2.9343401660089907, Acc:26.18, LR:0.1
+Epoch:16, Loss:2.9110080018982556, Acc:27.216, LR:0.1
+Epoch:17, Loss:2.892608948680751, Acc:27.424, LR:0.1
+Epoch:18, Loss:2.8789040725249464, Acc:27.53, LR:0.1
+Epoch:19, Loss:2.8653155470748084, Acc:27.87, LR:0.020000000000000004
+Validation: Loss:2.62585644782344, Acc:32.72
+Best model updated!
+Epoch:20, Loss:2.5461837660016307, Acc:34.274, LR:0.020000000000000004
+Epoch:21, Loss:2.4524303250910378, Acc:36.396, LR:0.020000000000000004
+Epoch:22, Loss:2.4050875908273563, Acc:37.164, LR:0.020000000000000004
+Epoch:23, Loss:2.378310780391059, Acc:37.868, LR:0.020000000000000004
+Epoch:24, Loss:2.3601683744079316, Acc:38.174, LR:0.020000000000000004
+Validation: Loss:2.041300301310382, Acc:46.23
+Best model updated!
+Epoch:25, Loss:2.3412129330208233, Acc:38.662, LR:0.020000000000000004
+Epoch:26, Loss:2.3261837937947734, Acc:38.914, LR:0.020000000000000004
+Epoch:27, Loss:2.3238007354614374, Acc:39.128, LR:0.020000000000000004
+Epoch:28, Loss:2.3093496920812466, Acc:39.326, LR:0.020000000000000004
+Epoch:29, Loss:2.3024072765999133, Acc:39.388, LR:0.020000000000000004
+Validation: Loss:2.027537078797063, Acc:45.98
+Epoch:30, Loss:2.2831889924490847, Acc:39.888, LR:0.020000000000000004
+Epoch:31, Loss:2.2818924746549953, Acc:40.058, LR:0.020000000000000004
+Epoch:32, Loss:2.268489053487168, Acc:40.186, LR:0.020000000000000004
+Epoch:33, Loss:2.252529361668755, Acc:40.55, LR:0.020000000000000004
+Epoch:34, Loss:2.245593924046782, Acc:40.908, LR:0.020000000000000004
+Validation: Loss:1.971632174298733, Acc:47.61
+Best model updated!
+Epoch:35, Loss:2.232314328098541, Acc:41.134, LR:0.020000000000000004
+Epoch:36, Loss:2.2216745450368625, Acc:41.11, LR:0.020000000000000004
+Epoch:37, Loss:2.21734812406018, Acc:41.184, LR:0.020000000000000004
+Epoch:38, Loss:2.2037321725464842, Acc:41.538, LR:0.020000000000000004
+Epoch:39, Loss:2.1906722043176443, Acc:41.944, LR:0.004000000000000001
+Validation: Loss:1.988741592515873, Acc:47.12
+Epoch:40, Loss:1.9754565374930497, Acc:47.074, LR:0.004000000000000001
+Epoch:41, Loss:1.9157470351899677, Acc:48.314, LR:0.004000000000000001
+Epoch:42, Loss:1.8713745372679533, Acc:49.258, LR:0.004000000000000001
+Epoch:43, Loss:1.8456622740191877, Acc:50.066, LR:0.004000000000000001
+Epoch:44, Loss:1.8281374956335863, Acc:50.662, LR:0.004000000000000001
+Validation: Loss:1.717493292651599, Acc:53.73
+Best model updated!
+Epoch:45, Loss:1.8106026975700007, Acc:50.55, LR:0.004000000000000001
+Epoch:46, Loss:1.7916036838155878, Acc:50.824, LR:0.004000000000000001
+Epoch:47, Loss:1.7848727623824878, Acc:50.982, LR:0.004000000000000001
+Epoch:48, Loss:1.7839371944632372, Acc:51.362, LR:0.004000000000000001
+Epoch:49, Loss:1.7606767684297489, Acc:51.722, LR:0.004000000000000001
+Validation: Loss:1.690029821818388, Acc:54.7
+Best model updated!
+Epoch:50, Loss:1.746710288555116, Acc:52.134, LR:0.004000000000000001
+Epoch:51, Loss:1.7461828517791864, Acc:52.2, LR:0.004000000000000001
+Epoch:52, Loss:1.7306482041888225, Acc:52.682, LR:0.004000000000000001
+Epoch:53, Loss:1.7168139450995208, Acc:52.838, LR:0.004000000000000001
+Epoch:54, Loss:1.709259199669294, Acc:53.146, LR:0.004000000000000001
+Validation: Loss:1.690797126745876, Acc:55.05
+Best model updated!
+Epoch:55, Loss:1.6939470505775394, Acc:53.154, LR:0.004000000000000001
+Epoch:56, Loss:1.6933657921793517, Acc:53.324, LR:0.004000000000000001
+Epoch:57, Loss:1.6863131370690778, Acc:53.182, LR:0.004000000000000001
+Epoch:58, Loss:1.6624511712042571, Acc:54.208, LR:0.004000000000000001
+Epoch:59, Loss:1.6633734111590763, Acc:53.86, LR:0.0008000000000000003
+Validation: Loss:1.6732855537269689, Acc:55.17
+Best model updated!
+Epoch:60, Loss:1.554593370088836, Acc:56.724, LR:0.0008000000000000003
+Epoch:61, Loss:1.5180505623902811, Acc:57.958, LR:0.0008000000000000003
+Epoch:62, Loss:1.4979904469321756, Acc:58.052, LR:0.0008000000000000003
+Epoch:63, Loss:1.488603052580753, Acc:58.682, LR:0.0008000000000000003
+Epoch:64, Loss:1.477055412119307, Acc:58.692, LR:0.0008000000000000003
+Validation: Loss:1.600228783450549, Acc:57.3
+Best model updated!
+Epoch:65, Loss:1.4708137551841833, Acc:59.06, LR:0.0008000000000000003
+Epoch:66, Loss:1.4523616059661826, Acc:59.232, LR:0.0008000000000000003
+Epoch:67, Loss:1.450399153677704, Acc:59.518, LR:0.0008000000000000003
+Epoch:68, Loss:1.4463240078952917, Acc:59.418, LR:0.0008000000000000003
+Epoch:69, Loss:1.4352932878772315, Acc:59.842, LR:0.0008000000000000003
+Validation: Loss:1.609480000749419, Acc:57.01
+Epoch:70, Loss:1.4298642919496503, Acc:59.782, LR:0.0008000000000000003
+Epoch:71, Loss:1.4107347781700856, Acc:60.27, LR:0.0008000000000000003
+Epoch:72, Loss:1.414376253362202, Acc:60.448, LR:0.0008000000000000003
+Epoch:73, Loss:1.4064952278381113, Acc:60.442, LR:0.0008000000000000003
+Epoch:74, Loss:1.3946648180637213, Acc:60.816, LR:0.0008000000000000003
+Validation: Loss:1.6138191675838036, Acc:57.34
+Best model updated!
+Epoch:75, Loss:1.3887601648755086, Acc:60.992, LR:0.0008000000000000003
+Epoch:76, Loss:1.387081428561979, Acc:60.892, LR:0.0008000000000000003
+Epoch:77, Loss:1.3827509809942806, Acc:60.9, LR:0.0008000000000000003
+Epoch:78, Loss:1.3779850460379326, Acc:61.234, LR:0.0008000000000000003
+Epoch:79, Loss:1.3646041772249715, Acc:61.72, LR:0.00016000000000000007
+Validation: Loss:1.615298612208306, Acc:57.33
+Epoch:80, Loss:1.3230358188414513, Acc:62.586, LR:0.00016000000000000007
+Epoch:81, Loss:1.3105240032800933, Acc:62.932, LR:0.00016000000000000007
+Epoch:82, Loss:1.308708441684313, Acc:63.078, LR:0.00016000000000000007
+Epoch:83, Loss:1.3080267438193416, Acc:63.03, LR:0.00016000000000000007
+Epoch:84, Loss:1.2962435836072468, Acc:63.328, LR:0.00016000000000000007
+Validation: Loss:1.6024937886226027, Acc:57.54
+Best model updated!
+Epoch:85, Loss:1.2960183908567404, Acc:63.53, LR:0.00016000000000000007
+Epoch:86, Loss:1.2973011402827699, Acc:63.582, LR:0.00016000000000000007
+Epoch:87, Loss:1.286790662561841, Acc:63.568, LR:0.00016000000000000007
+Epoch:88, Loss:1.283770296427295, Acc:63.988, LR:0.00016000000000000007
+Epoch:89, Loss:1.275808786034889, Acc:63.87, LR:0.00016000000000000007
+Validation: Loss:1.6092214493811885, Acc:57.65
+Best model updated!
+Epoch:90, Loss:1.2771509891885626, Acc:63.988, LR:0.00016000000000000007
+Epoch:91, Loss:1.282245306102821, Acc:63.842, LR:0.00016000000000000007
+Epoch:92, Loss:1.2802272455771562, Acc:63.976, LR:0.00016000000000000007
+Epoch:93, Loss:1.2751155715159443, Acc:63.79, LR:0.00016000000000000007
+Epoch:94, Loss:1.2733203125426837, Acc:64.028, LR:0.00016000000000000007
+Validation: Loss:1.6047373527212987, Acc:57.77
+Best model updated!
+Epoch:95, Loss:1.272238826355361, Acc:63.826, LR:0.00016000000000000007
+Epoch:96, Loss:1.2693282580741532, Acc:64.094, LR:0.00016000000000000007
+Epoch:97, Loss:1.265038981309632, Acc:64.224, LR:0.00016000000000000007
+Epoch:98, Loss:1.2712285366204694, Acc:63.926, LR:0.00016000000000000007
+Epoch:99, Loss:1.2557691582633406, Acc:64.238, LR:0.00016000000000000007
+Validation: Loss:1.6103978277761726, Acc:57.81
+Best model updated!
+Test: Acc:57.81
